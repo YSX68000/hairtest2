@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request ID Page</title>
+  <!-- CSP設定 -->
+  <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' 'unsafe-inline';
+      img-src 'self' data: https:;
+      connect-src 'self';
+      style-src 'self';
+  ">
+</head>
+<body>
+  <h1>Upload Image and Get Request ID</h1>
+  <form id="uploadForm">
+    <input type="file" id="imageInput" accept="image/*" required />
+    <button type="submit">Get Request ID</button>
+  </form>
+
+  <script src="page1.js"></script>
+</body>
+</html>
